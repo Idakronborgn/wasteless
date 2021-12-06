@@ -7,7 +7,7 @@ async function login() {
   const loginObject = { username: username, password: password };
   console.log(loginObject);
   const response = await fetch(
-    "http://localhost:3000/wasteless/php-login-service/index.php",
+    "http://localhost:3000/php-login-service/index.php",
     {
       method: "POST",
       body: JSON.stringify(loginObject),
@@ -55,7 +55,7 @@ async function signup() {
   console.log(user);
 
   const response = await fetch(
-    "http://localhost:3000/wasteless/php-login-service/index.php",
+    "http://localhost:3000/php-login-service/index.php",
     {
       method: "POST",
       body: JSON.stringify(user),
